@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+@mixin flexCenter() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./ChatGPT\ Image\ Oct\ 14\,\ 2025\,\ 11_23_04\ AM.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    .section-1 {
+        width: 100%;
+        height: 10%;
+        background-color: transparent;
+
+
+        nav {
+            color: #fff;
+            @include flexCenter();
+            margin-left: 20px;
+            margin-right: 20px;
+
+            .leftlogo {
+                font-size: 25px;
+                color: #e733e491;
+
+            }
+
+            .center a {
+                color: #fff;
+                margin: 30px;
+                font-size: 15px;
+                text-decoration: none;
+            }
+
+            .rightmanu a {
+                color: #fff;
+                margin: 2px;
+                font-size: 20px;
+
+                .lalka {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    .section-2 {
+        width: 100%;
+        height: 100%;
+
+        .aside img {
+            width: 50vw;
+            position: absolute;
+            top: 25%;
+            left: 0;
+
+
+        }
+
+        .aside>p{
+            color: #ab3ad8;
+            position: absolute;
+            left: 38%;
+            top: 66%;
+            
+        }
+
+        
+
+        .center img {
+            height: 655px;
+            position: absolute;
+            top: 10%;
+            left: 40%;
+        }
+
+        .lefttop{
+            color: #fff;
+            width: 300px;
+            height: 30px;
+            position: absolute;
+            right: 15%;
+            top: 25%;
+        }
+
+        .leftcenter{
+            color: #fff;
+            width: 300px;
+            height: 30px;
+            position: absolute;
+            right: 15%;
+            top: 45%;
+        }
+
+        .leftdown{
+            color: #fff;
+            width: 300px;
+            height: 30px;
+            position: absolute;
+            right: 15%;
+            top: 65%;
+        }
+
+        .bottom{
+            width: 100%;
+            height: 10%;
+            background-color: rgba(119, 94, 94, 0.144);
+            position: absolute;
+            bottom: 0;
+            @include flexCenter();
+
+            .leftplay{
+                color: #fff;
+                font-size: 20px;
+                margin: 20px;
+            }
+
+            .center2{
+                color: #fff;
+                display: flex;
+                gap: 80px;
+                text-transform: uppercase;
+            }
+
+            .arrow{
+                color: #fff;
+                margin: 20px;
+            }
+        }
+    }
+
+
+
+}
